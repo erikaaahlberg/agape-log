@@ -1,0 +1,52 @@
+body{
+    font-family: 'Hind', sans-serif;
+    text-transform: uppercase;
+    max-width: 850px;
+    margin: auto;
+    color: rgb(41, 41, 41);
+}
+i.fa-angle-right{
+    position: relative;
+    bottom: -5px;
+    font-size: 1.3em;
+    color: rgb(245, 32, 32);
+}
+h1, h2, h3, h4, h5, h6{
+    text-align: left;
+    letter-spacing: 1.5px;
+    margin: 0px;
+    font-weight: 600;
+}
+h1{
+    text-align: center;
+    margin: 30px auto;
+}
+h6, h3{
+    text-align: center;
+}
+.post-wrapper{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.44);
+}
+article{
+    line-height: 1.7;
+    letter-spacing: 1.2px;
+    max-width: 700px;
+    padding: 50px;
+    margin: auto;
+}
+span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.date-wrapper{
+    background: rgb(188, 169, 206);
+}
+.title-wrapper{
+    background: rgb(176, 208, 222);
+}
+h6, h3{
+    padding: 10px;
+    font-size: 1.5em;
+}
