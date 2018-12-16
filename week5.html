@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loggbok projekt Agape</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind:400, 600, 700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active');
+                    $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Agape
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Vecka 1</a></li>
+                <li><a href="week2.html">Vecka 2</a></li>
+                <li><a href="week3.html">Vecka 3</a></li>
+                <li><a href="week4.html">Vecka 4</a></li>
+                <li><a href="week5.html">Vecka 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Vecka 5 -->
+        <h2>
+            <i class="fas fa-angle-right"></i>
+            Vecka 4
+        </h2>
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Måndag 19 november</h6>
+            </div>
+
+            <article>
+                <p><span>Min plan för dagen</span></p>
+
+                <p><span>Vid dagens slut</span></p>
+
+                <p><span>Min slutsats av dagen</span></p>
+            </article>
+        </div>
+        <div class="post-wrapper">
+            <div class="title-wrapper">
+                <h3><i class="fas fa-angle-right"></i> Demo & avstämning</h3>
+            </div>
+            <article>
+                <p>Jag har inte mycket att visa upp som är klart till skillnad från förra veckan, dessutom är inte
+                    kopplingen till databasen fungerande.</p>
+
+                <p><span>Planen för nästa vecka</span> är att få till den sista biten med databasen samt att
+                    skalet/designen på sidan ska vara klar i Vue - då inte alla funktioner.</p>
+            </article>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loggbok projekt Agape</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind:400, 600, 700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active');
+                    $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Agape
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Vecka 1</a></li>
+                <li><a href="week2.html">Vecka 2</a></li>
+                <li><a href="week3.html">Vecka 3</a></li>
+                <li><a href="week4.html">Vecka 4</a></li>
+                <li><a href="week5.html">Vecka 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Vecka 3 -->
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Måndag 3 december</h6>
+            </div>
+
+            <article>
+                <p><span>Min plan för dagen</span> var att få ut något från databasen.</p>
+
+                <p><span>Vid dagens slut</span> har jag äntligen fått ut något från databasen! Har suttit i 12 timmar
+                    idag och testat olika lösningar. Det verkar som att proxy inte fungerade som det ska trots att jag
+                    testat alla olika varianter jag har hittat på nätet. Jag löste det med att ändra adressen i
+                    fetchanropet. Var dessutom tvungen att hitta på en lösning till CORS problemet för att få tillgång
+                    till databasen.</p>
+
+                <p><span>Min slutsats av dagen</span> är att allt går när man är envis och det är så himla skönt när
+                    man äntligen hittar en lösning.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Tisdag 4 december</h6>
+            </div>
+
+            <article>
+                <p><span>Min plan för dagen</span> var att ta ledigt halva dagen då jag jobbade så mycket igår samt att
+                    jag hade en del personliga ärenden. Jag tänkte spendera eftermiddagen åt att hitta en trevlig
+                    datepicker till bokningssystemet.</p>
+
+                <p><span>Vid dagens slut</span> har jag hittat en datepicker och en timepicker. Jag har installerat
+                    Buefy som har en del komponenter att välja på.</p>
+
+                <p><span>Min slutsats av dagen</span> är att det är viktigt att ta ledigt, ibland är det allt som krävs
+                    när man kört fast.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Onsdag 5 december</h6>
+            </div>
+
+            <article>
+                <p><span>Min plan för dagen</span> var att fixa sass-loader och node-sass då det inte gick förut. Många
+                    verkar ha haft krångel med installering av dessa så det finns en djungel av problem att läsa runt
+                    om.</p>
+
+                <p><span>Vid dagens slut</span> har jag lyckats installera dessa trots en del problem. Jag har
+                    implementerat datepickern och timepickern och ett bokningsformulär på sidan.</p>
+
+                <p><span>Min slutsats av dagen</span> är att man ska aldrig ropa hej, saker kan crasha när man minst
+                    anar det, haha.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Torsdag 6 december</h6>
+            </div>
+
+            <article>
+                <p><span>Min plan för dagen</span> var att få till importering av stylesheets via config-filen så att
+                    jag slipper importera dem i varje komponent. Hela poängen med komprimering av styling går förlorad
+                    på något sätt då tycker jag ifall den ändå måste laddas om och om igen. Jag vill åtminstone kunna
+                    få
+                    till det på det här viset med mina mixins och variabler som jag vill nå överallt.</p>
+
+                <p>Skulle även behöva kolla Udemy lite mer.</p>
+
+                <p><span>Vid dagens slut</span> har jag lyckats krascha hela sidan, haha. Har lyckats återställa
+                    allting iallafall. Det vill sig fortfarande inte med importeringen i config-filen. Jag får ge upp
+                    den idén och det får duga iallafall.</p>
+
+                <p><span>Min slutsats av dagen</span> är att ibland måste man ge upp.</p>
+            </article>
+
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Lördag 8 december</h6>
+            </div>
+
+            <article>
+                <p><span>Min plan för dagen</span> var att få klart så mycket av designen som möjligt för att visa Karl
+                    på söndag.</p>
+
+                <p><span>Vid dagens slut</span> har jag faktiskt fått klart ganska mycket av designen. Jag har kommit
+                    på underfund med ganska mycket nya saker gällande Vue. Bara den till synes enkla grejen att lägga
+                    bilder som bakgrund i en div kan vara en helt ny erfarenhet haha. Jag körde fast vid hur jag ska
+                    baka ihop strängen när man ska skicka med en url som props.</p>
+
+                <p><span>Min slutsats av dagen</span> är att det är fasen kul med Vue, så skönt att de tråkiga sakerna
+                    som bara borde fungera har lossnat.</p>
+            </article>
+
+        </div>
+
+        <div class="post-wrapper">
+            <div class="title-wrapper">
+                <h3><i class="fas fa-angle-right"></i> Demo & avstämning</h3>
+            </div>
+            <article>
+                <p>Jag har en hel design att visa upp Karl nu, om än ofärdig och vissa bitar måste filas mer på. Men det finns något att diskutera nu iallafall.</p>
+
+                <p><span>Planen för nästa vecka</span> är att designen ska vara helt klar, post och delete ska även fungera i databasen. Det är dags att börja skriva på alla dessa js-funktioner som ska finnas. Ska hitta ett sätt att ha dem i separata filer då de ska användas av fler komponenter. Det fungerade inte tidigare så det verkar vara lättare sagt än gjort.</p>
+            </article>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loggbok projekt Agape</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind:400, 600, 700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active');
+                    $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Agape
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Vecka 1</a></li>
+                <li><a href="week2.html">Vecka 2</a></li>
+                <li><a href="week3.html">Vecka 3</a></li>
+                <li><a href="week4.html">Vecka 4</a></li>
+                <li><a href="week5.html">Vecka 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Vecka 4 -->
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Måndag 10 december</h6>
+            </div>
+
+            <article>
+                <p><span>Min plan för dagen</span> var storslagen, men jag åkte på influensan och orkade inte ens titta på tv. Jag sov mestadels av tiden fram tills på torsdagen.</p>
+
+                <p><span>Vid dagens slut</span> har jag panik över allt jag borde göra men inte kan.</p>
+
+                <p><span>Min slutsats av dagen</span> är att influensan suger musten ur en.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+                <div class="date-wrapper">
+                    <h6>Torsdag 13 december</h6>
+                </div>
+    
+                <article>
+                    <p><span>Min plan för dagen</span> var att jobba så mycket jag orkade då jag fortfarande är sjuk.</p>
+    
+                    <p><span>Vid dagens slut</span> har jag fortsatt göra en del ändringar i designen, jag har hittat en schysst carousel som jag och Karl snackade om att han ville ha. Däremot har jag inte lyckats lägga en komponent i den utan bara bilder. Har försökt lägga ett objekt som en slide utan framgång. Jag filar vidare på den men den är ingen prioritet så jag avvaktar med den.</p>
+
+                    <p>Innehållet på sidan är på plats helt okej ändå inför redovisningen så att jag har iallafall något att visa upp.</p>
+    
+                    <p><span>Min slutsats av dagen</span> är att jag har gjort mitt bästa trots att jag ligger efter så kommer det gå att lösa. Allt behöver inte vara klart på torsdag.</p>
+                </article>
+            </div>
+
+            <div class="post-wrapper">
+                    <div class="date-wrapper">
+                        <h6>Fredag 14 december</h6>
+                    </div>
+        
+                    <article>
+                        <p><span>Min plan för dagen</span> var att kolla mer Udemy och skriva ikapp dagboken haha, kommer snart inte ihåg vilken dag som var vilken och då blir det jobbigt. Ska även fila klart lite mer på en del grejer på designen. Jag är fortfarande sjuk så jag får ta massa sovpauser emellanån, har därför inga höga krav just nu.</p>
+        
+                        <p><span>Vid dagens slut</span> har jag fått till formuläret lite snyggare och ultimatiserat koden lite mer enligt vue-indexet, flyttat runt lite i komponenterna.</p>
+
+        
+                        <p><span>Min slutsats av dagen</span> är att det är bra att schmacka upp all kod för att sen utveckla den och snygga till den/ultimatisera den i efterhand. Det är enklare att få en överblick och när man väl får upp all kod så är det mindre risk att man kör fast. Ibland hamnar man i ett läge när man inte vet var man ska börja, då är det bättre att bara börja och ändra sedan.</p>
+                    </article>
+                </div>
+
+                <div class="post-wrapper">
+                        <div class="date-wrapper">
+                            <h6>Lördag 15 december</h6>
+                        </div>
+            
+                        <article>
+                            <p><span>Min plan för dagen</span> var att hitta en lösning till varför jag måste node server.js-filen hela tiden. </p>
+            
+                            <p><span>Vid dagens slut</span> har jag inte lyckats ändra på den saken. Jag har lagt till en grej i config filen som gör att den kopplingen som sker när jag kör node server.js inte ska avbrytas av npm run dev (när projektet körs på port 8080) men det fungerar ändå inte.</p>
+            
+                            <p><span>Min slutsats av dagen</span> är att såna här grejer i bakgrunden är fasen det svåraste, men fasen det roligaste när man väl lyckas med. Inte för att jag har lyckats med det än men snart är jag där.</p>
+                        </article>
+                    </div>
+
+        <div class="post-wrapper">
+            <div class="title-wrapper">
+                <h3><i class="fas fa-angle-right"></i> Demo & avstämning</h3>
+            </div>
+            <article>
+                <p></p>
+
+                <p><span>Planen för nästa vecka</span> är att få till den sista biten med databasen samt att
+                    skalet/designen på sidan ska vara klar i Vue - då inte alla funktioner.</p>
+            </article>
+        </div>
+
+    </main>
+</body>
+
+</html>

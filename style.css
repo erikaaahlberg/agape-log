@@ -1,16 +1,52 @@
 body{
     font-family: 'Hind', sans-serif;
     text-transform: uppercase;
+    color: #292929;
+}
+main{
+    padding: 50px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: rgb(230, 96, 72);
+}
+nav{
+    flex-basis: 85%;
+    text-align: right;
+}
+ul{    
+    margin: 25px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 1.2em;
+}
+a:hover{
+    color: #292929;
+}
+a.active{
+    color: #292929;
+    border-bottom: 5px solid white;
+}
+main{
     max-width: 850px;
     margin: auto;
-    color: rgb(41, 41, 41);
 }
-i.fa-angle-right{
+/*i.fa-angle-right{
     position: relative;
     bottom: -5px;
     font-size: 1.3em;
-    color: rgb(245, 32, 32);
-}
+    color: white;
+}*/
 h1, h2, h3, h4, h5, h6{
     text-align: left;
     letter-spacing: 1.5px;
@@ -18,8 +54,9 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 600;
 }
 h1{
-    text-align: center;
-    margin: 30px auto;
+    flex-basis: 10%;    
+    margin: 20px;
+    border-bottom: 5px solid white;
 }
 h6, h3{
     text-align: center;
@@ -41,10 +78,16 @@ span{
     font-weight: 600;
 }
 .date-wrapper{
-    background: rgb(188, 169, 206);
+    /*background: rgb(188, 169, 206);*/
+    background: rgb(163, 206, 196);
 }
 .title-wrapper{
-    background: rgb(176, 208, 222);
+    /*background: rgb(176, 208, 222);*/
+    background: rgb(230, 96, 72);
+
+}
+.title-wrapper i {
+    color: white;
 }
 h6, h3{
     padding: 10px;

@@ -11,19 +11,36 @@
         crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <main>
+    <header>
         <h1>
             Agape
         </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Vecka 1</a></li>
+                <li><a href="week2.html">Vecka 2</a></li>
+                <li><a href="week3.html">Vecka 3</a></li>
+                <li><a href="week4.html">Vecka 4</a></li>
+                <li><a href="week5.html">Vecka 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
 
         <!-- Vecka 1 -->
-        <h2>
-            <i class="fas fa-angle-right"></i>
-            Vecka 1
-        </h2>
         <div class="post-wrapper">
             <div class="date-wrapper">
                 <h6>Måndag 19 november</h6>
@@ -60,13 +77,21 @@
             </div>
 
             <article>
-                <p><span>Min plan för dagen</span> var att lära mig om Vue och kolla på en kurs på Udemy och läsa runt lite och testa mig fram. Jag tänkte även läsa om olika tillägg/npm paket och installera de jag vill använda. Installerade först Gulp vilket funkade utan problem. </p>
-                
+                <p><span>Min plan för dagen</span> var att lära mig om Vue och kolla på en kurs på Udemy och läsa runt
+                    lite och testa mig fram. Jag tänkte även läsa om olika tillägg/npm paket och installera de jag vill
+                    använda. Installerade först Gulp vilket funkade utan problem. </p>
+
                 <p></p>
 
-                <p><span>Vid dagens slut</span> har jag kommit en bit på Udemy-kursen och läst på om en mängder av olika paket. Har till slut lyckats installera Gulp utan problem. Installerade sen Bootstrap Vue men installationsproblemen fortsatte så det tog massa onödig tid. Efter att ha löst en del errors fick jag ut en Bootstrap Vue-navbar på sidan. Jag fortsatte även jobba på den statiska designen i html och css.</p>
+                <p><span>Vid dagens slut</span> har jag kommit en bit på Udemy-kursen och läst på om en mängder av
+                    olika paket. Har till slut lyckats installera Gulp utan problem. Installerade sen Bootstrap Vue men
+                    installationsproblemen fortsatte så det tog massa onödig tid. Efter att ha löst en del errors fick
+                    jag ut en Bootstrap Vue-navbar på sidan. Jag fortsatte även jobba på den statiska designen i html
+                    och css.</p>
 
-                <p><span>Min slutsats av dagen</span> är att det är väldigt många delar beroende av varandra när man startar ett projekt. Det är också frustrerande att jag inte lyckats ta reda på varför min dator numera krånglar med npm, misstänker att det är uppdateringen till Mojave som stökar till det.</p>
+                <p><span>Min slutsats av dagen</span> är att det är väldigt många delar beroende av varandra när man
+                    startar ett projekt. Det är också frustrerande att jag inte lyckats ta reda på varför min dator
+                    numera krånglar med npm, misstänker att det är uppdateringen till Mojave som stökar till det.</p>
             </article>
         </div>
 
@@ -76,11 +101,20 @@
             </div>
 
             <article>
-                <p><span>Min plan för dagen</span> var att kolla vidare på Udemy samt att fortsätta få ut komponenter på sidan i takt med att jag lär mig. Skulle dessutom bli klar med den statiska designen och skicka iväg den till Karl idag.</p>
+                <p><span>Min plan för dagen</span> var att kolla vidare på Udemy samt att fortsätta få ut komponenter
+                    på sidan i takt med att jag lär mig. Skulle dessutom bli klar med den statiska designen och skicka
+                    iväg den till Karl idag.</p>
 
-                <p><span>Vid dagens slut</span> har jag känslan av att ha gått ett steg fram och två steg bakåt. Jag har löst error efter error - men faktiskt löst dem. Däremot så bestluade jag mig att ta bort Bootstrap Vue efter att jag insåg att det inte funkar med SASS då det inte gick att installera bootstrap-sass. Allting blev rörigt helt enkelt till slut så jag tog bort hela projektet och började om från början. Jag fick iallafall iväg designen till Karl.</p>
+                <p><span>Vid dagens slut</span> har jag känslan av att ha gått ett steg fram och två steg bakåt. Jag
+                    har löst error efter error - men faktiskt löst dem. Däremot så bestluade jag mig att ta bort
+                    Bootstrap Vue efter att jag insåg att det inte funkar med SASS då det inte gick att installera
+                    bootstrap-sass. Allting blev rörigt helt enkelt till slut så jag tog bort hela projektet och
+                    började om från början. Jag fick iallafall iväg designen till Karl.</p>
 
-                <p><span>Min slutsats av dagen</span> är samma som igår - jävla npm. Fantastiskt bra när det funkar men kan bli väldigt krångligt. Har dock aldrig upplevt några problem förut med att kunna installera med npm, så det är väl dags. Har iallafall lärt mig mycket på Udemy och kollat runt på olika repon på github som är gjorda i Vue.</p>
+                <p><span>Min slutsats av dagen</span> är samma som igår - jävla npm. Fantastiskt bra när det funkar men
+                    kan bli väldigt krångligt. Har dock aldrig upplevt några problem förut med att kunna installera med
+                    npm, så det är väl dags. Har iallafall lärt mig mycket på Udemy och kollat runt på olika repon på
+                    github som är gjorda i Vue.</p>
             </article>
         </div>
 
@@ -90,11 +124,20 @@
             </div>
 
             <article>
-                <p><span>Min plan för dagen</span> var att få alla npm-paket jag ville ha installerade. Jag tänkte kolla vidare på Udemy kursen och därefter komma igång med Vue-projektet och lägga upp en filstruktur. Jag och Karl hade även ett möte inplanerat där vi skulle gå igenom designen och vad som behöver ändras. </p>
+                <p><span>Min plan för dagen</span> var att få alla npm-paket jag ville ha installerade. Jag tänkte
+                    kolla vidare på Udemy kursen och därefter komma igång med Vue-projektet och lägga upp en
+                    filstruktur. Jag och Karl hade även ett möte inplanerat där vi skulle gå igenom designen och vad
+                    som behöver ändras. </p>
 
-                <p><span>Vid dagens slut</span> har jag och Karl haft ett givande möte angående designen och vi är överens. Jag har likt alla andra dagar bråkat en del med npm då jag fick problem med att köra npm run dev-kommandot. Jag fick även error när jag skulle ladda ner buefy. Jag har iallafall löst det och nu verkar det fungera. Jag har dessutom hunnit kolla några avsnitt på Udemy.</p>
+                <p><span>Vid dagens slut</span> har jag och Karl haft ett givande möte angående designen och vi är
+                    överens. Jag har likt alla andra dagar bråkat en del med npm då jag fick problem med att köra npm
+                    run dev-kommandot. Jag fick även error när jag skulle ladda ner buefy. Jag har iallafall löst det
+                    och nu verkar det fungera. Jag har dessutom hunnit kolla några avsnitt på Udemy.</p>
 
-                <p><span>Min slutsats av dagen</span> är att jag har tagit bort mitt projekt och skapat nytt ca 4 gånger, kanske 5. När man lär sig på egen hand går det självklart mycket långsammare än när man har en lärare till hands - det är svårt att få ett perspektiv på alla bitarna. Min lärare verkar inte kunna hjälpa mig. </p>
+                <p><span>Min slutsats av dagen</span> är att jag har tagit bort mitt projekt och skapat nytt ca 4
+                    gånger, kanske 5. När man lär sig på egen hand går det självklart mycket långsammare än när man har
+                    en lärare till hands - det är svårt att få ett perspektiv på alla bitarna. Min lärare verkar inte
+                    kunna hjälpa mig. </p>
             </article>
         </div>
 
@@ -104,29 +147,41 @@
             </div>
 
             <article>
-                <p><span>Min plan för dagen</span> var att implementera designen jag och Karl kommit överens om i den riktiga Vue-sidan. Jag ska ge mig på att fixa fontawesome för Vue - det står i många forum om hur krångligt det är. Ska även hinna kolla vidare på Udemy.</p>
-                
-                <p><span>Vid dagens slut</span> har jag lyckats installera fontawesome för Vue. Det var inget jätteprojekt direkt. Jag har kollat vidare på Udemy och kommit en bra bit på kursen. Jag har även fått upp en fungerande navbar och undersidor uppbyggt av vue-router.</p>
+                <p><span>Min plan för dagen</span> var att implementera designen jag och Karl kommit överens om i den
+                    riktiga Vue-sidan. Jag ska ge mig på att fixa fontawesome för Vue - det står i många forum om hur
+                    krångligt det är. Ska även hinna kolla vidare på Udemy.</p>
 
-                <p>Jag har dessutom kommit i kontakt med någon som jobbar med Vue och haft möjlighet att svara på några frågor och ge lite tips. Väldigt givande.</p> 
+                <p><span>Vid dagens slut</span> har jag lyckats installera fontawesome för Vue. Det var inget
+                    jätteprojekt direkt. Jag har kollat vidare på Udemy och kommit en bra bit på kursen. Jag har även
+                    fått upp en fungerande navbar och undersidor uppbyggt av vue-router.</p>
 
-                <p><span>Min slutsats av dagen</span> är att när allting väl lossnar så kan det gå undan. Jag har börjat tro att jag tagit mig vatten över huvudet men det här ska nog fasen gå.</p>
+                <p>Jag har dessutom kommit i kontakt med någon som jobbar med Vue och haft möjlighet att svara på några
+                    frågor och ge lite tips. Väldigt givande.</p>
+
+                <p><span>Min slutsats av dagen</span> är att när allting väl lossnar så kan det gå undan. Jag har
+                    börjat tro att jag tagit mig vatten över huvudet men det här ska nog fasen gå.</p>
             </article>
-        </div>        
+        </div>
 
         <div class="post-wrapper">
             <div class="title-wrapper">
-                <h3>Demo & avstämning</h3>
+                <h3><i class="fas fa-angle-right"></i> Demo & avstämning</h3>
             </div>
-            <p>Jag har visat upp den delen av sidan jag har gjort klart, vilket är navbar, hero-bild samt undersidor och implementerat router.</p>
+            <article>
+                <p>Jag har visat upp den delen av sidan jag har gjort klart, vilket är navbar, hero-bild samt undersidor
+                    och implementerat router.</p>
 
-            <p>Karl visste från början att det här är första gången jag jobbar med Vue så han hade inte förväntat sig att jag skulle ha kommit så långt med själva sidan. Vi känner att vi ligger i fas trots mycket problemlösning denna veckan.</p>
+                <p>Karl visste från början att det här är första gången jag jobbar med Vue så han hade inte förväntat sig
+                    att jag skulle ha kommit så långt med själva sidan. Vi känner att vi ligger i fas trots mycket
+                    problemlösning denna veckan.</p>
 
-            <p><span>Planen för nästa vecka</span> är att databaskopplingen för bokningssystemet samt inloggning ska vara klar .</p>
+                <p><span>Planen för nästa vecka</span> är att databaskopplingen för bokningssystemet samt inloggning ska
+                    vara klar .</p>
+            </article>
         </div>
 
         <!-- Vecka 2 -->
-        <h2>
+      <!--  <h2>
             <i class="fas fa-angle-right"></i>
             Vecka 2
         </h2>
@@ -136,9 +191,11 @@
             </div>
 
             <article>
-                <p><span>Min plan för dagen</span> var att kolla upp vilken databas jag skulle använda och hur jag skulle implementera den i Vue.</p>
-                
-                <p><span>Vid dagens slut</span> har jag läst runt en del. Har beslutat mig för att testa Nuxt i kombination med Express.</p>
+                <p><span>Min plan för dagen</span> var att kolla upp vilken databas jag skulle använda och hur jag
+                    skulle implementera den i Vue.</p>
+
+                <p><span>Vid dagens slut</span> har jag läst runt en del. Har beslutat mig för att testa Nuxt i
+                    kombination med Express.</p>
 
                 <p><span>Min slutsats av dagen</span> är att det finns väldigt många olika lösningar på typ allt. </p>
             </article>
@@ -150,11 +207,17 @@
             </div>
 
             <article>
-                <p><span>Min plan för dagen</span> var att få igång Nuxt och Express och få ut något från databasen. Ifall det fanns tid över kolla Udemy lite mer.</p>
-                
-                <p><span>Vid dagens slut</span> har jag startat ett nytt Nuxt-projekt och laddat ner Express trots mina npm-problem. Jag trodde att Nuxt gick att ladda ner i efterhand men insåg att man måste starta ett helt nytt projekt samt att Nuxt inte är så likt Vue som jag trodde från början. Jag beslutade därför att fortsätta köra Vue och kombinera det med My SQL och Express. Att lära mig Vue är en del av projektet, dessutom har Karl redan en My SQL databas så det blir nog enklast för båda parter.</p>
+                <p><span>Min plan för dagen</span> var att få igång Nuxt och Express och få ut något från databasen.
+                    Ifall det fanns tid över kolla Udemy lite mer.</p>
 
-                <p><span>Min slutsats av dagen</span> är att det blir mycket trial and error när man ger sig på nya metoder, det är i princip omöjligt att förutspå vilka problem man kan tänkas stöta på.</p>
+                <p><span>Vid dagens slut</span> har jag startat ett nytt Nuxt-projekt och laddat ner Express trots mina
+                    npm-problem. Jag trodde att Nuxt gick att ladda ner i efterhand men insåg att man måste starta ett
+                    helt nytt projekt samt att Nuxt inte är så likt Vue som jag trodde från början. Jag beslutade
+                    därför att fortsätta köra Vue och kombinera det med My SQL och Express. Att lära mig Vue är en del
+                    av projektet, dessutom har Karl redan en My SQL databas så det blir nog enklast för båda parter.</p>
+
+                <p><span>Min slutsats av dagen</span> är att det blir mycket trial and error när man ger sig på nya
+                    metoder, det är i princip omöjligt att förutspå vilka problem man kan tänkas stöta på.</p>
             </article>
         </div>
 
@@ -164,10 +227,13 @@
             </div>
             <article>
                 <p><span>Min plan för dagen</span> var att skapa en ny My SQL-databas och få ut data från den.</p>
-                
-                <p><span>Vid dagens slut</span> har jag läst runt massor. Jag har ännu inte lyckats få ut något från databasen och vet inte vem jag ska vända mig till för att få hjälp. Jag tror att det fattas en del som jag ännu inte hittat.</p>
 
-                <p><span>Min slutsats av dagen</span> är att det är svårt att programmera ibland. Det är frustrerande att köra fast men jag lär mig massor av att testa på alla olika lösningar.</p>
+                <p><span>Vid dagens slut</span> har jag läst runt massor. Jag har ännu inte lyckats få ut något från
+                    databasen och vet inte vem jag ska vända mig till för att få hjälp. Jag tror att det fattas en del
+                    som jag ännu inte hittat.</p>
+
+                <p><span>Min slutsats av dagen</span> är att det är svårt att programmera ibland. Det är frustrerande
+                    att köra fast men jag lär mig massor av att testa på alla olika lösningar.</p>
             </article>
         </div>
 
@@ -177,11 +243,14 @@
             </div>
 
             <article>
-                <p><span>Min plan för dagen</span> var att ta reda på ifall den lösningen jag tror  på verkligen fungerar i Vue (My SQL, Express rest api) eller ifall jag måste komma på en annan lösning.</p>
-                
-                <p><span>Vid dagens slut</span> har jag läst runt en del och tror fortfarande på den lösningen jag har beslutat mig för.</p>
+                <p><span>Min plan för dagen</span> var att ta reda på ifall den lösningen jag tror på verkligen
+                    fungerar i Vue (My SQL, Express rest api) eller ifall jag måste komma på en annan lösning.</p>
 
-                <p><span>Min slutsats av dagen</span> är att det finns väldigt mycket olika varianter att göra samma sak på.</p>
+                <p><span>Vid dagens slut</span> har jag läst runt en del och tror fortfarande på den lösningen jag har
+                    beslutat mig för.</p>
+
+                <p><span>Min slutsats av dagen</span> är att det finns väldigt mycket olika varianter att göra samma
+                    sak på.</p>
             </article>
         </div>
 
@@ -191,11 +260,13 @@
             </div>
 
             <article>
-                <p><span>Min plan för dagen</span> var att fortsätta på en lösning bäst jag hinner då jag inte hade så mycket tid till att jobba idag.</p>
-                
+                <p><span>Min plan för dagen</span> var att fortsätta på en lösning bäst jag hinner då jag inte hade så
+                    mycket tid till att jobba idag.</p>
+
                 <p><span>Vid dagens slut</span> har jag inte hunnit göra så mycket mer än att kolla Udemy tyvärr.</p>
 
-                <p><span>Min slutsats av dagen</span> är inget särskilt då jag inte hunnit med så mycket jobb idag utom att kolla på Udemy.</p>
+                <p><span>Min slutsats av dagen</span> är inget särskilt då jag inte hunnit med så mycket jobb idag utom
+                    att kolla på Udemy.</p>
             </article>
         </div>
 
@@ -203,88 +274,15 @@
             <div class="title-wrapper">
                 <h3>Demo & avstämning</h3>
 
-                <p>Jag har inte mycket att visa upp som är klart till skillnad från förra veckan, dessutom är inte kopplingen till databasen fungerande.</p>
+                <p>Jag har inte mycket att visa upp som är klart till skillnad från förra veckan, dessutom är inte
+                    kopplingen till databasen fungerande.</p>
 
-                <p><span>Planen för nästa vecka</span> är att få till den sista biten med databasen samt att skalet/designen på sidan ska vara klar i Vue - då inte alla funktioner.</p>
+                <p><span>Planen för nästa vecka</span> är att få till den sista biten med databasen samt att
+                    skalet/designen på sidan ska vara klar i Vue - då inte alla funktioner.</p>
             </div>
-        </div>
+        </div>-->
 
-        <!-- Vecka 3 -->
-        <h2>
-            <i class="fas fa-angle-right"></i>
-            Vecka 3
-        </h2>
-        <div class="post-wrapper">
-            <div class="date-wrapper">
-                <h6>Måndag 3 december</h6>
-            </div>
-
-            <article>
-                <p><span>Min plan för dagen</span> var att få ut något från databasen.</p>
-
-                <p><span>Vid dagens slut</span> har jag äntligen fått ut något från databasen! Har suttit i 12 timmar idag och testat olika lösningar. Det verkar som att proxy inte fungerade som det ska trots att jag testat alla olika varianter jag har hittat på nätet. Jag löste det med att ändra adressen i fetchanropet. Var dessutom tvungen att hitta på en lösning till CORS problemet för att få tillgång till databasen.</p>
-
-                <p><span>Min slutsats av dagen</span> är att allt går när man är envis och det är så himla skönt när man äntligen hittar en lösning.</p>
-            </article>
-        </div>
-
-        <div class="post-wrapper">
-            <div class="date-wrapper">
-                <h6>Tisdag 4 december</h6>
-            </div>
-
-            <article>
-                <p><span>Min plan för dagen</span> var att ta ledigt halva dagen då jag jobbade så mycket igår samt att jag hade en del personliga ärenden. Jag tänkte spendera eftermiddagen åt att hitta en trevlig datepicker till bokningssystemet.</p>
-
-                <p><span>Vid dagens slut</span></p>
-
-                <p><span>Min slutsats av dagen</span> </p>
-            </article>
-        </div>
-        
-        <div class="post-wrapper">
-            <div class="title-wrapper">
-                <h3>Demo & avstämning</h3>
-            </div>
-        </div>
-
-        <!-- Vecka 4 -->
-        <h2>
-            <i class="fas fa-angle-right"></i>
-            Vecka 4
-        </h2>
-        <div class="post-wrapper">
-            <div class="date-wrapper">
-                <h6>Måndag 19 november</h6>
-            </div>
-
-            <article>
-                <p><span>Min plan för dagen</span></p>
-
-                <p><span>Vid dagens slut</span></p>
-
-                <p><span>Min slutsats av dagen</span></p>
-            </article>
-        </div>
-
-        <!-- Vecka 5 -->
-        <h2>
-            <i class="fas fa-angle-right"></i>
-            Vecka 5
-        </h2>
-        <div class="post-wrapper">
-            <div class="date-wrapper">
-                <h6>Måndag 19 november</h6>
-            </div>
-
-            <article>
-                <p><span>Min plan för dagen</span></p>
-
-                <p><span>Vid dagens slut</span></p>
-
-                <p><span>Min slutsats av dagen</span></p>
-            </article>
-        </div>
+  
     </main>
 </body>
 
