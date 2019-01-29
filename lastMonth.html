@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loggbok projekt Agape</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind:400, 600, 700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active');
+                    $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Agape
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Vecka 1</a></li>
+                <li><a href="week2.html">Vecka 2</a></li>
+                <li><a href="week3.html">Vecka 3</a></li>
+                <li><a href="week4.html">Vecka 4</a></li>
+                <li><a href="week5.html">Vecka 5</a></li>
+                <li><a href="lastMonth.html">Månaden efter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Veckorna efter vecka 5 -->
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Torsdag 20 december</h6>
+            </div>
+        
+            <article>
+                <p><span>Min plan för dagen</span></p>
+        
+                <p><span>Vid dagens slut</span></p>
+        
+                <p><span>Min slutsats av dagen</span></p>
+            </article>
+        </div>
+
+
+        <div class="post-wrapper">
+            <div class="title-wrapper">
+                <h3><i class="fas fa-angle-right"></i> Demo & avstämning</h3>
+            </div>
+            <article>
+                <p>Jag har iallafall en hemsida att visa upp, dock fungerar inte alla funktioner än. Jag har mycket jag vill förbättra innan inlämning.</p>
+
+                <p><span>Planen för kommande veckor</span> är att få alla funktioner på plats, främst de som rör bokningssystemet.</p>
+            </article>
+        </div>
+
+    </main>
+</body>
+
+</html>
