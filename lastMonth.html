@@ -45,18 +45,175 @@
         <!-- Veckorna efter vecka 5 -->
         <div class="post-wrapper">
             <div class="date-wrapper">
-                <h6>Torsdag 20 december</h6>
+                <h6>Tisdag 8 januari</h6>
             </div>
         
             <article>
-                <p><span>Min plan för dagen</span></p>
+                <p><span>Min plan för dagen</span> var att jobba vidare på funktionerna i booking-form, efter praktiken.</p>
         
-                <p><span>Vid dagens slut</span></p>
+                <p><span>Vid dagens slut</span> har hela sidan kraschat pga något modulfel. Sidan fungerade inte när jag körde npm run dev och det tog mig hela dagen att lösa detta. Jag fick till och med hjälp på praktiken.</p>
+
+                <p>Errormeddelandet var hur långt som helst så det var inte så lätt att söka på google utan jag fick söka på olika delar av den och läsa runt.</p>
         
-                <p><span>Min slutsats av dagen</span></p>
+                <p><span>Min slutsats av dagen</span> är att det var node-sass det var fel på. Jag installerade en ny version av node-gyp som krävdes för att kunna installera bycrypt förut. Av errormeddelanden framstod att det var något modulfel och jag kom fram till att det måste vara det. Jag fixade tillbaka den andra versionen jag hade och då fungerade allting.</p>
             </article>
         </div>
 
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Onsdag 9 januari</h6>
+            </div>
+        
+            <article>
+                <p><span>Min plan för dagen</span> var att fixa styling lite och sortera bland komponenter, efter praktiken.</p>
+        
+                <p><span>Vid dagens slut</span> har jag möblerat om en del och även hittat en lösning på varför nodemon inte fungerade förut och jag hela tiden var tvungen att köra node server.js. Jag läste på en massor om server filen och res.end, res.send och res.json etc. När jag flyttade om res.end så fungerade nodemon.</p>
+        
+                <p><span>Min slutsats av dagen</span> är att fasen vad mycket det finns att hålla koll på och fasen vad mycket det finns kvar att lära. Det är skitkul.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Torsdag 10 januari</h6>
+            </div>
+        
+            <article>
+                <p><span>Min plan för dagen</span> var att fortsätta förbättra kod samt börja jobba på admindelen, efter praktiken.</p>
+        
+                <p><span>Vid dagens slut</span> har jag gjort funktioner för formattering av datum samt tid som väljs i datepicker och timepicker från Buefy. Det ska formatteras från input till databasen (string) samt från string till input, för att kunna exkludera de tider och datum som redan är bokade.</p>
+        
+                <p><span>Min slutsats av dagen</span> är att många saker tar onödigt med tid. Eller det är kanske inte i onödan eftersom att man lär sig hela tiden, men de tar oväntat med lång tid. Jag antar att det är bristen på erfarenhet såklart, när man gör något för första gången är det svårt att veta vad man ska förvänta sig och hur man ska planera därefter.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Fredag 11 januari</h6>
+            </div>
+        
+            <article>
+                <p><span>Min plan för dagen</span> var att få till att timepicker ska utesluta de bokade tiderna för det valda datumet i datepickern, efter praktiken. Det ska alltså göras ett fetchanrop på input från datepickern samt att timepickern ska vara disabled tills de bokade tiderna har hämtats och exkluderats.</p>
+        
+                <p><span>Vid dagens slut</span> har jag lyckats pussla ihop det.</p>
+        
+                <p><span>Min slutsats av dagen</span> är att man blir ganska trött av att koda mer än 8 timmar per dag.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Lördag 12 januari</h6>
+            </div>
+        
+            <article>
+                <p><span>Min plan för dagen</span> var att fixa adminsidan så att Karl kan ta bort bokningar samt redigera dem från sidan istället för i databasen.</p>
+        
+                <p><span>Vid dagens slut</span> har jag fixat en accordion och fått den att fungera. Jag har lärt mig mycket om att skicka data och event mellan komponenter och har strukturerat om en del.</p>
+        
+                <p><span>Min slutsats av dagen</span> är att mycket har fallit på plats.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Söndag 13 januari</h6>
+            </div>
+        
+            <article>
+                <p><span>Min plan för dagen</span> var att kolla hela projektet och förbättra det jag kan. Jag ska läsa på om Vue instance och fördjupa mig inom reaktivitet och ordning</p>
+        
+                <p><span>Vid dagens slut</span> har jag lärt mig massor. Jag har klurat ut vad ett observer-objekt är och hur man använder sig av computed-funktioner för att manipulera data etc. </p>
+        
+                <p><span>Min slutsats av dagen</span> är bland annat att ett observer objekt är odefinerad - eller snarare en observer, precis som det låter. Den ändras hela tiden för den är ofta bunden till en input eller annat. När man emit till föräldern till komponenten så sätts den som den är just då.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Onsdag 16 januari</h6>
+            </div>
+        
+            <article>
+                <p><span>Min plan för dagen</span> var att fixa klart delete booking samt edit booking, efter praktiken.</p>
+        
+                <p><span>Vid dagens slut</span> har jag fått det att fungera samt snyggat till lite.</p>
+        
+                <p><span>Min slutsats av dagen</span> ibland funkar det smidigt.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Torsdag 17 januari</h6>
+            </div>
+        
+            <article>
+                <p><span>Min plan för dagen</span> var att fixa till admin så att det blir enkelt att redigera etc, efter praktiken.</p>
+        
+                <p><span>Vid dagens slut</span> har jag gjort om visa booking content till ett form istället så att fälten fungerar som en input. Det var lite krångligt för de inputfält jag använder mig av från Buefy fungerar inte som vanligt att value syns i inputfältet så att jag fick göra befintlig bokning till placeholders. När man trycker edit så sätts de gamla värdena till this.booking sen skrivs de över med de man väljer att redigera.</p>
+        
+                <p><span>Min slutsats av dagen</span> är att det finns lösningar på allt.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Fredag 18 januari</h6>
+            </div>
+        
+            <article>
+                <p><span>Min plan för dagen</span> var att fixa så att edit booking fungerar. Det blev lite krångligt med accordion och id'n och hur de visas för att ett värde ändras på alla bokningar för den dagen.</p>
+        
+                <p><span>Vid dagens slut</span> löste jag det problemet med att bara bokningen man väljer att redigera syns när man redigerar, via ett klick på redigera-knappen. La även till en modal som jag tänker använda till bl.a login och meddelanden för lite bättre interaktion.</p>
+        
+                <p><span>Min slutsats av dagen</span> är att jag kommer ha svårt att hinna klart med allt jag vill innan deadline.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Lördag 19 januari</h6>
+            </div>
+        
+            <article>
+                <p><span>Min plan för dagen</span> var att fixa login med hashade och saltade lösenord, samt starta sessions med local storage (i databasen).</p>
+        
+                <p><span>Vid dagens slut</span> har jag läst på om många olika varianter av att starta session via databasen jag använder. Jag väljer istället att lagra användarnamn och lösenord i databasen men att skapa och lagra session med ett vue-session npm, det blev mycket mindre komplicerat.</p>
+        
+                <p><span>Min slutsats av dagen</span> är att det är svårt med alla olika kombinationer av allt man kan använda och att lyckas pussla ihop det, man måste läsa på tillräckligt för att få en djupare förståelse för att lyckas med det.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Söndag 20 januari</h6>
+            </div>
+        
+            <article>
+                <p><span>Min plan för dagen</span> var att hinna klart inför inlämning. Jag skulle städa.</p>
+        
+                <p><span>Vid dagens slut</span> har jag städat och sorterat massor. </p>
+        
+                <p><span>Min slutsats av dagen</span> är att det är svårt att bli klar för att de komponenter jag gjorde från början ser ut som skit. Nu när jag har lärt mig väldigt mycket om Vue, om man jämför med innan projektet när jag inte kunde någonting, så vill jag inte lämna in något jag inte är nöjd med.</p>
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Lördag 19 januari</h6>
+            </div>
+        
+            <article>
+                <p><span>Min plan för dagen</span> var att fixa login med hashade och saltade lösenord, samt starta sessions med local storage (i databasen).</p>
+        
+                <p><span>Vid dagens slut</span> har jag läst på om många olika varianter av att starta session via databasen jag använder. Jag väljer istället att lagra användarnamn och lösenord i databasen men att skapa och lagra session med ett vue-session npm, det blev mycket mindre komplicerat.</p>
+
+                <p>Modalen används nu för både login och logout och jag har även lagt till en trustbar längst upp med knapp för login och logout samt kontakt.</p>
+        
+                <p><span>Min slutsats av dagen</span> är att det är svårt med alla olika kombinationer av allt man kan använda och att lyckas pussla ihop det, man måste läsa på tillräckligt för att få en djupare förståelse för att lyckas med det.</p>
+            </article>
+        </div>
 
         <div class="post-wrapper">
             <div class="title-wrapper">
