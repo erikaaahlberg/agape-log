@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loggbok projekt Agape</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind:400, 600, 700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('a').each(function () {
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active');
+                    $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Agape
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Vecka 1</a></li>
+                <li><a href="week2.html">Vecka 2</a></li>
+                <li><a href="week3.html">Vecka 3</a></li>
+                <li><a href="week4.html">Vecka 4</a></li>
+                <li><a href="week5.html">Vecka 5</a></li>
+                <li><a href="lastMonth.html">Vecka 6-9</a></li>
+                <li><a href="info.html"><i class="fas fa-info-circle"></i></a></li>
+                <li><a href="https://github.com/erikaaahlberg/agape"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Info -->
+
+        <div class="post-wrapper">
+            <div class="date-wrapper">
+                <h6>Projektinformation</h6>
+            </div>
+            <article>
+                <h5 class="sub-title">Wireframes </h5>
+                <p>Jag kodade en i enkel html och scss som är bifogad i en separat mapp. Jag gjorde endast första sidan
+                    med förslag på komponenter och utseende. Den utgick jag sedan ifrån när jag gjorde resten av
+                    innehållet vilket är i princip vara en komponent på varje sida, bortsett från tjänster-sidan. Vi
+                    skissade upp vilka undersidor som skulle vara med, och vad som skulle finnas på varje sida. Det
+                    blev ungefär en komponent på varje sida och vi skissade inte upp dem utan bestämde oss för att jag
+                    skulle göra dem så att de passar resten av designen.</p>
+
+                <h5 class="sub-title">Dependencies</h5>
+                <p>Jag har använt mig av <a href="https://cli.vuejs.org/guide/">Vue CLI 3</a> som är en förkonstruerad
+                    uppbyggnad baserad på webpack 4, node v.6.0.0 och npm v.3.0.0. Jag har själv lagt till nedanstående
+                    paket:</p>
+                    
+                <ul class="info-list">
+                    <li>"@chenfengyuan/vue-carousel": "^0.1.1"</li>
+                    <li>"@fortawesome/fontawesome-free": "^5.5.0"</li>
+                    <li>"axios": "^0.18.0"</li>
+                    <li>"bcryptjs": "^2.4.3"</li>
+                    <li>"buefy": "^0.7.1"</li>
+                    <li>"cors": "^2.8.5"</li>
+                    <li>"express-session": "^1.15.6"</li>
+                    <li>"express-vue": "^5.8.2"</li>
+                    <li>"mysql": "^2.16.0"</li>
+                    <li>"sass-loader": "^7.1.0"</li>
+                    <li>"vee-validate": "^2.1.4"</li>
+                    <li>"vue": "^2.5.21"</li>
+                    <li>"vue-axios": "^2.1.4"</li>
+                    <li>"vue-router": "^3.0.1"</li>
+                    <li>"vue-session": "^1.0.0"</li>
+                </ul>
+
+                <h5 class="sub-title">Backend</h5>
+                <p>Jag har använt mig av mySQL via mamp phpMyAdmin som databas, express för att skapa ett rest API som jag sedan hämtade data från med http-request. Jag valde det eftersom att Karl redan har en sådan databas och är van vid den, samt att det är vad vi fått lära oss i skolan. Det kändes som en bra idé att välja något som jag var bekant med eftersom att hela Vue-grejen var ny för mig.</p>
+
+                <h5 class="sub-title">Kompabilitet</h5>
+                <p>Sidan håller inte för IE-browsers äldre än version 8. Läs mer om <a href="https://cli.vuejs.org/guide/browser-compatibility.html">Vue
+                        CLI 3 kompabilitet</a></p>
+                
+                <h5 class="sub-title">Funktionsbeskrivning</h5>
+
+            </article>
+        </div>
+
+        <div class="post-wrapper">
+            <div class="title-wrapper">
+                <h3><i class="fas fa-angle-right"></i> Obligatoriska moment</h3>
+            </div>
+
+            <article>
+                <h5 class="sub-title">Externa ramverk</h5>
+                <p>Jag använde mig av <a href="https://buefy.github.io/">Buefy</a> som är baserat på ramverket Bulma. Jag valde att använda mig av en navbar, en herobild samt inputfält, timepicker och datepicker. Jag tyckte att det var en bra idé eftersom att det är utformat just för Vue och jag kunde då se hur komponenterna var uppbyggda och se lite hur det fungerar med bindings etc. <br/><br/>
+                Jag använde mig dessutom av <a href="https://fortawesome.com/">Fortawesome</a> som är en version av Fontawesome anpassat efter Vue.</p>
+
+
+                <h5 class="sub-title">Responsivitet</h5>
+                <p>Jag valde självklart att göra sidan responsiv då jag tycker det är extremt viktigt.</p>
+
+                <h5 class="sub-title">Pre-processor</h5>
+                <p>Jag valde att använda mig av SASS (sass-loader) då jag tycker att stylingen blir så mycket smidigare när man kan göra mixins. Det blir så smidigt att ändra om på hela sidan ifall man vill ändra färg, margins etc och jag tycker det är viktigt att margins och paddings är genomgående på en hemsida/app.</p>
+            </article>
+        </div>
+
+    </main>
+</body>
+
+</html>

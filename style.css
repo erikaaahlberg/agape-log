@@ -2,7 +2,7 @@ body, html{
     font-family: 'Hind', sans-serif;
     color: black;
     background: #939393;
-    padding: 0px;
+    margin: 0px;
 }
 main{
     padding: 50px;
@@ -29,18 +29,28 @@ li{
     display: inline-block;
     margin: 10px;
 }
+ul.info-list{
+    margin-bottom: 50px;
+}
+ul.info-list li {
+    display: block;
+}
 a{
     text-decoration: none;
     color: white;
     letter-spacing: 1.5px;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 a:hover{
     color: #292929;
+    transition: color .3s ease-in-out;
 }
 a.active{
     color: #292929;
     border-bottom: 5px solid white;
+}
+.fa-info-circle, .fa-github{
+    font-size: 1.5em;
 }
 main{
     max-width: 850px;
@@ -65,6 +75,10 @@ h6, h3{
     padding: 10px;
     font-size: 1.5em;
 }
+h5.sub-title{
+    font-weight: 700;
+    font-size: 1.2em;
+}
 .post-wrapper{
     background: #dfdfdf;
     margin-top: 15px;
@@ -77,6 +91,14 @@ article{
     padding: 50px;
     margin: auto;
     letter-spacing: 1.5px;
+}
+article a{
+    color: rgb(213, 93, 72);
+    font-weight: 700;
+}
+article a:hover{
+    color: #292929;
+    transition: color .3s ease-in-out;
 }
 p{
     margin-top: 0px;
@@ -98,11 +120,9 @@ li.post-list i{
     color: rgb(213, 93, 72);
 }
 .date-wrapper{
-    /*background: rgb(188, 169, 206);*/
     background: rgb(163, 206, 196);
 }
 .title-wrapper{
-    /*background: rgb(176, 208, 222);*/
     background: rgb(213, 93, 72);
 
 }
