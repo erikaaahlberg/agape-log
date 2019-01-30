@@ -115,6 +115,7 @@ span{
 ul.post-list{
     padding: 0px;
     margin: 0px;
+    margin-bottom: 50px;
 }
 li.post-list i{
     color: rgb(213, 93, 72);
